@@ -1,0 +1,25 @@
+<%-include("partials/header")-%>
+<div class="page-name p-3 text-center">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="">OUR BLOGS</h1>
+  </div>
+</div>
+</div>
+<div class="blogs-section row" >
+<% posts.forEach(function(post){%>
+<div class="contact-col col-lg-12" align="center">
+<form action="/blogs/post/<%=post._id%>" method="post">
+    <div class="blogs-col">
+      <span ><%=post.date%></span><span>•</span><span>BY <%=post.authur%></span><span>•</span><span><%=post.category%></span>
+      <h3><%=post.title%></h3>
+      <div style="background-image:url('<%=post.imageURL%>');" class="blogs-frame">
+      </div>
+      <p>
+          <%=post.content.substring(0,200)+" ..."%><a class="blog-readmore" style="display:block;" href="/blogs/post/<%=post._id%>" onclick="this.form.submit()">—— Read More</a>
+      </p>
+    </div>
+</form>
+</div>
+<%}) %>
+</div>
+<%-include("partials/footer")-%>

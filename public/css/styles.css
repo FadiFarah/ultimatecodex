@@ -1,0 +1,408 @@
+h6{
+  color:#dfa667;
+  font-family: sans-serif;
+  font-weight: 550;
+}
+p{
+  opacity: 0.5;
+}
+h1{
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+}
+.tablet-bigger{
+  display: inherit;
+}
+.tablet-smaller{
+  display: none;
+}
+/* ___________________Header Section_______________________ */
+#header-section{
+  background: url("https://www.cumminsandwhite.com/wp-content/uploads/2017/03/Black-Desk-Background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  background-size:cover;
+  color: white;
+}
+.link{
+  font-family: 'Bebas Neue', cursive;
+  font-size:  25px;
+  	color: whitesmoke;
+  	position: relative;
+
+}
+.page-name h1{
+  font-size: 30px;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+.link::after{
+  position: absolute;
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: whitesmoke;
+	left: 50%;
+	bottom: 0px;
+  top: 70px;
+	transition: all 0.2s ease-in-out;
+}
+.link:hover::after{
+  width: 100%;
+	left: 0;
+}
+.navbar-toggler{
+  position: absolute;
+  left: 80%;
+}
+img{
+  width: 120px;
+  height:40px;
+}
+
+
+
+/* ___________________Home Page_______________________ */
+
+/* ___________________Subheader Section_______________________ */
+.subheader-section{
+  height: 550px;
+  margin-top: 170px;
+}
+
+/* ___________________Believe Section_______________________ */
+
+.believe-section h1{
+    font-size: 30px;
+    padding:0 25%;
+    margin-top: 50px;
+}
+
+/* ___________________Details Section_______________________ */
+.details-section{
+  padding:10% 0;
+  border: 1px solid rgba(0,0,0,0.2) ;
+  border-left: none;
+  border-right: none;
+  margin: 10% 20%;
+}
+
+.col{
+
+  padding: 5%;
+}
+.details-image{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ___________________Startnow Section_______________________ */
+
+.startnow-section{
+  background-color: #F6F6F6;
+  width: 100%;
+  padding:50px;
+  margin-bottom: 200px;
+}
+
+/* ___________________About Page_______________________ */
+
+/* ___________________About Section_______________________ */
+
+.about-section{
+
+  margin: 3% 20%;
+}
+.about-section h1{
+  font-size: 30px;
+}
+.about-section h1{
+  font-size: 28px;
+}
+.about-section h3{
+ font-family: 'Orbitron', sans-serif;
+ font-size: 17px;
+}
+.about-section i,h3{
+ margin-bottom: 20px;
+}
+.about-section p{
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 13px;
+}
+.about-choose{
+  background-color: black;
+  margin-bottom: 200px;
+}
+.about-choose h1{
+  color: white;
+  font-size:30px;
+}
+
+
+/* ___________________Contact Page_______________________ */
+/* ___________________Contact Section_______________________ */
+.contact-section{
+  margin: 5% 20% 15%;
+}
+.contact-section h1{
+  font-size: 23px;
+  margin-bottom: 50px;
+}
+.form-button{
+  color: white;
+  background-color: #dfa667;
+}
+.contact-section p{
+  font-size: 12px;
+}
+
+
+
+/* ___________________Projects Page_______________________ */
+/* ___________________Project Section_______________________ */
+.projects-section{
+  margin: 5% 10% 15%;
+  text-align: center;
+}
+.projects-section h3{
+  margin-top: 10%;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+}
+.projects-col{
+  margin-top: 40px;
+}
+.projects-frame{
+  background-size: cover;
+  height: 100%;
+  width: 80%;
+  border-radius: 2%;
+  position: inherit;
+  bottom: 0;
+  transition: 300ms ease-out;
+}
+.projects-frame:hover{
+  position: relative;
+  bottom: 10%;
+}
+.projects-image{
+  position: relative;
+  top: 7%;
+  height: 100%;
+  width: 100%;
+  border-radius: 0% 0% 2% 2%;
+}
+
+
+/* ___________________Blogs Page_______________________ */
+/* ___________________Blogs Section_______________________ */
+
+.blogs-section{
+  text-align: left;
+  margin: 2% 0% 10%;
+}
+.contact-col{
+
+}
+.blogs-section h3{
+  max-width: 35%;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin:2% 0;
+}
+.blogs-section span{
+  margin-right: 1%;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.25);
+  font-size: 10px;
+}
+.blogs-section p{
+  max-width: 35%;
+  font-size: 13px;
+  margin:2% 0%;
+}
+.blogs-section form{
+  margin-bottom: 30px;
+}
+.blogs-col{
+  margin-top: 40px;
+}
+.blogs-frame{
+  background-size: cover;
+  padding:13% 0%;
+  width: 36%;
+  position: inherit;
+  bottom: 0;
+  transition: 300ms ease-out;
+}
+
+.blog-readmore{
+  margin-top: 10px;
+  color: rgba(0,0,0,1);
+  font-size: 9px;
+  font-weight: 900;
+  font-family: 'Orbitron', sans-serif;
+}
+.blog-readmore:hover{
+  color: black;
+}
+
+
+@media screen and (max-width:1440px) {
+
+ .believe-section h1{
+     padding:0 20%;
+     font-size: 25px;
+ }
+ .page-name h1{
+   font-size: 20px;
+ }
+ .page-name p{
+   font-size: 10px;
+   font-weight: 500;
+ }
+ .about-choose h1{
+   font-size:17px;
+ }
+
+}
+@media screen and (max-width:1024px) {
+ h1{
+   font-size: 30px;
+ }
+ .believe-section h1{
+     padding:0 15%;
+     font-size: 20px;
+ }
+ .about-choose h1{
+   font-size:13px;
+ }
+ .page-name h1{
+   font-size: 15px;
+ }
+ .page-name p{
+   font-size: 10px;
+   font-weight: 500;
+ }
+}
+@media screen and (max-width:991px){
+  .details-section{
+    margin:0;
+    text-align: center;
+  }
+  .details-section p{
+    padding: 10%;
+  }
+
+  .about-choose h1{
+    font-size:14px;
+  }
+  .projects-frame{
+    height: 290px;
+    width: 350px;
+    border-radius: 2%;
+
+  }
+  .projects-image{
+    position: relative;
+    top: 7%;
+    height: 270px;
+    width: 350px;
+    border-radius: 2%;
+  }
+
+  .blogs-section span{
+    margin-right: 1%;
+    font-family: sans-serif;
+    color: rgba(0,0,0,0.25);
+    font-size: 8px;
+  }
+  .blogs-section h3{
+    max-width: 80%;
+    font-size: 15px;
+  }
+  .blogs-section p{
+    max-width: 75%;
+    font-size: 12px;
+  }
+  .blogs-section form{
+    margin-bottom: 30px;
+  }
+  .blogs-col{
+    margin-top: 40px;
+  }
+  .blogs-frame{
+    background-size: cover;
+    padding:25% 0%;
+    width: 80%;
+    position: inherit;
+    bottom: 0;
+    transition: 300ms ease-out;
+  }
+
+}
+@media screen and (max-width:767px) {
+ h1{
+   font-size: 25px;
+ }
+ .details-section{
+   text-align: center;
+ }
+ h6{
+   font-size: 20px;
+ }
+ .believe-section h1{
+     padding:0 5%;
+     font-size: 15px;
+ }
+ .tablet-bigger{
+   display: none;
+ }
+ .tablet-smaller{
+   display: inherit;
+ }
+
+ .projects-section{
+   margin:5% 4%;
+ }
+ .projects-col{
+   margin-top: 100px;
+ }
+ .projects-frame{
+   height: 100%;
+   width: 100%;
+ }
+ .projects-image{
+   position: relative;
+   top: 10%;
+   height: 100%;
+   width: 100%;
+   border-radius: 2%;
+ }
+ @media screen and (max-width:425px) {
+  h1{
+    font-size: 20px;
+  }
+  .believe-section h1{
+      padding:0 0%;
+      font-size: 15px;
+  }
+  h6{
+    font-size: 12px;
+  }
+  .blogs-section h3{
+    max-width: 70%;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin:2% 0;
+  }
+}

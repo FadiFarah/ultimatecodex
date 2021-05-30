@@ -1,0 +1,18 @@
+<%-include("partials/header")-%>
+<div class="page-name p-3 text-center">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="">OUR PROJECTS</h1>
+  </div>
+</div>
+</div>
+<div class="projects-section row">
+  <%posts.forEach(function(post){%>
+    <div class="col-lg-4 col-12 projects-col" align="center">
+      <div style="background-image:url('/images/MacFrame.png');" class="projects-frame">
+        <img class="projects-image" src="<%=post.imageURL%>">
+      </div>
+      <h3><%=post.title%></h3>
+    </div>
+  <%});%>
+</div>
+<%-include("partials/footer")-%>

@@ -1,0 +1,30 @@
+<%-include("partials/header")-%>
+</div>
+<form class="" action="/blogs/post" method="post">
+  <div class="form-group">
+    <label for="inputTitle">Title</label>
+    <input name="title" type="text" class="form-control" id="inputTitle"placeholder="Enter title">
+  </div>
+  <div class="form-group">
+    <label for="inputAuthur">Authur</label>
+    <input name="authur" type="text" class="form-control" id="inputAuthur" placeholder="Authur">
+  </div>
+  <div class="form-group">
+    <label for="inputCategory">Category</label>
+    <input name="category" type="text" class="form-control" id="inputCategory" placeholder="Category">
+  </div>
+  <div class="form-group">
+    <label for="inputImageURL">Image URL</label>
+    <input name="imageURL" type="text" class="form-control" id="inputImageURL" placeholder="ImageURL">
+  </div>
+  <div class="form-group">
+    <label for="inputPassword">Password</label>
+    <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="inputContent">Content</label>
+    <textarea name="content" class="rounded-0 form-control" id="inputContent" rows="5" placeholder="Content..."></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<%-include("partials/footer")-%>
