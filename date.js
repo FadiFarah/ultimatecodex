@@ -19,6 +19,6 @@ const year = d.getFullYear() // 2019
 const date = d.getDate()
 const monthIndex = d.getMonth()
 const monthName = months[monthIndex]
-return monthName+" "+date+" "+year;
+return monthName+" "+date+", "+year;
 }
 module.exports = getCurrentDate();

@@ -1,3 +1,8 @@
+
+.forms{
+  padding-top: 200px;
+  margin: 0 20%;
+}
 h6{
   color:#dfa667;
   font-family: sans-serif;
@@ -7,71 +12,103 @@ p{
   opacity: 0.5;
 }
 h1{
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Source Sans Pro';
   font-weight: 900;
 }
-.tablet-bigger{
-  display: inherit;
+
+/* Navigation Bar */
+ul {
+  margin: 20px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+  text-align: center;
 }
-.tablet-smaller{
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+.navbar-clicks {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro';
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.navbar-clicks:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-clicks:hover:after {
+  width: 100%;
+  left: 0;
+}
+.navbar-clicks:hover{
+  text-decoration-line: none;
+  color:white;
+}
+.navbar{
+  z-index: 1;
+  padding:0 0 0.5rem;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+.navbar-brand{
+  font-family: 'Rajdhani';
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  padding: 15px 20px;
+}
+
+.navbar-items-block{
+  margin-right: 20px;
+}
+.mobile-navbar{
   display: none;
 }
-/* ___________________Header Section_______________________ */
-#header-section{
-  background: url("https://www.cumminsandwhite.com/wp-content/uploads/2017/03/Black-Desk-Background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
-  background-size:cover;
-  color: white;
-}
-.link{
-  font-family: 'Bebas Neue', cursive;
-  font-size:  25px;
-  	color: whitesmoke;
-  	position: relative;
 
-}
-.page-name h1{
-  font-size: 30px;
-}
-a:hover{
-    color: white;
-    text-decoration: none;
-}
-.link::after{
-  position: absolute;
-	content: "";
-	width: 0%;
-	height: 2px;
-	background-color: whitesmoke;
-	left: 50%;
-	bottom: 0px;
-  top: 70px;
-	transition: all 0.2s ease-in-out;
-}
-.link:hover::after{
-  width: 100%;
-	left: 0;
-}
-.navbar-toggler{
-  position: absolute;
-  left: 80%;
-}
-img{
-  width: 120px;
-  height:40px;
-}
+
+
 
 
 
 /* ___________________Home Page_______________________ */
 
-/* ___________________Subheader Section_______________________ */
-.subheader-section{
-  height: 550px;
-  margin-top: 170px;
+/* ___________________Home Section_______________________ */
+#home-section{
+  background-color: #000000;
+  height: 600px;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  font-family:'Rajdhani', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.15rem;
+  color: white;
+
+}
+.home-header{
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+.page-name h1{
+  font-size: 30px;
+  font-family:'Rajdhani', sans-serif;
 }
 
 /* ___________________Believe Section_______________________ */
@@ -84,11 +121,11 @@ img{
 
 /* ___________________Details Section_______________________ */
 .details-section{
-  padding:10% 0;
+  padding:7% 0;
   border: 1px solid rgba(0,0,0,0.2) ;
   border-left: none;
   border-right: none;
-  margin: 10% 20%;
+  margin: 1% 20% 5%;
 }
 
 .col{
@@ -113,7 +150,20 @@ img{
 /* ___________________About Page_______________________ */
 
 /* ___________________About Section_______________________ */
-
+#all-section{
+  background-color: #000000;
+  height: 400px;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  font-family:'Rajdhani', sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.15rem;
+  color: white;
+}
+.all-header{
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
 .about-section{
 
   margin: 3% 20%;
@@ -125,14 +175,14 @@ img{
   font-size: 28px;
 }
 .about-section h3{
- font-family: 'Orbitron', sans-serif;
+ font-family: 'Source Sans Pro';
  font-size: 17px;
 }
 .about-section i,h3{
  margin-bottom: 20px;
 }
 .about-section p{
-  font-family: Montserrat;
+  font-family: 'Source Sans Pro';
   font-weight: 900;
   font-size: 13px;
 }
@@ -172,12 +222,14 @@ img{
   text-align: center;
 }
 .projects-section h3{
-  margin-top: 10%;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 20px;
+  margin-top: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-size: 25px;
 }
 .projects-col{
-  margin-top: 40px;
+  margin-top: 100px;
 }
 .projects-frame{
   background-size: cover;
@@ -213,14 +265,14 @@ img{
 }
 .blogs-section h3{
   max-width: 35%;
-  font-family: sans-serif;
+  font-family:'Source Sans Pro';
   font-size: 20px;
   font-weight: 600;
   margin:2% 0;
 }
 .blogs-section span{
   margin-right: 1%;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro';
   color: rgba(0,0,0,0.25);
   font-size: 10px;
 }
@@ -249,7 +301,7 @@ img{
   color: rgba(0,0,0,1);
   font-size: 9px;
   font-weight: 900;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Source Sans Pro';
 }
 .blog-readmore:hover{
   color: black;
@@ -262,15 +314,13 @@ img{
      padding:0 20%;
      font-size: 25px;
  }
- .page-name h1{
-   font-size: 20px;
- }
- .page-name p{
-   font-size: 10px;
-   font-weight: 500;
- }
+
  .about-choose h1{
    font-size:17px;
+ }
+ .projects-section h3{
+
+   font-size: 20px;
  }
 
 }
@@ -286,18 +336,19 @@ img{
    font-size:13px;
  }
  .page-name h1{
-   font-size: 15px;
+   font-size: 25px;
  }
  .page-name p{
-   font-size: 10px;
+   font-size: 15px;
    font-weight: 500;
+ }
+ .projects-section h3{
+   margin-top: 20px;
+   font-size: 15px;
  }
 }
 @media screen and (max-width:991px){
-  .details-section{
-    margin:0;
-    text-align: center;
-  }
+
   .details-section p{
     padding: 10%;
   }
@@ -311,6 +362,9 @@ img{
     border-radius: 2%;
 
   }
+  .projects-col{
+    margin-top: 0px;
+  }
   .projects-image{
     position: relative;
     top: 7%;
@@ -321,7 +375,7 @@ img{
 
   .blogs-section span{
     margin-right: 1%;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro';
     color: rgba(0,0,0,0.25);
     font-size: 8px;
   }
@@ -347,6 +401,9 @@ img{
     bottom: 0;
     transition: 300ms ease-out;
   }
+  ul {
+    width: 480px;
+  }
 
 }
 @media screen and (max-width:767px) {
@@ -359,6 +416,7 @@ img{
  h6{
    font-size: 20px;
  }
+
  .believe-section h1{
      padding:0 5%;
      font-size: 15px;
@@ -374,7 +432,7 @@ img{
    margin:5% 4%;
  }
  .projects-col{
-   margin-top: 100px;
+   margin-top: 170px;
  }
  .projects-frame{
    height: 100%;
@@ -386,6 +444,31 @@ img{
    height: 100%;
    width: 100%;
    border-radius: 2%;
+ }
+ .projects-section h3{
+   margin-top: 70px;
+   font-size: 25px;
+ }
+ .pc-navbar{
+   display: none;
+ }
+ .mobile-navbar{
+   display: inherit;
+ }
+ .mobile-navbar div ul li{
+   list-style: inherit;
+   display: table;
+ }
+ .navbar-list-btn{
+   position: absolute;
+   margin-right: 20px;
+   right: 0;
+   top: 10px;
+   height: 40px;
+   background-color: rgb(187, 187, 187);
+ }
+ .navbar-brand{
+   font-size: 15px;
  }
  @media screen and (max-width:425px) {
   h1{
@@ -400,9 +483,8 @@ img{
   }
   .blogs-section h3{
     max-width: 70%;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro';
     font-size: 15px;
     font-weight: 600;
     margin:2% 0;
   }
-}

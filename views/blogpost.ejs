@@ -1,7 +1,15 @@
 <%-include("partials/header")-%>
+<div id="all-section">
+<div class="all-header">
+<div class="page-name text-center">
+  <div class="">
+    <h1 class="">BLOG POST</h1>
+  </div>
 </div>
-<div class="blogs-section">
-    <div class="blogs-col" align="center">
+</div>
+</div>
+<div class="blogs-section row">
+    <div class="blogs-col col-lg-12" align="center">
       <span><%=post.date%></span><span>•</span><span>BY <%=post.authur%></span><span>•</span><span><%=post.category%></span>
       <h3><%=post.title%></h3>
       <div style="background-image:url('<%=post.imageURL%>');" class="blogs-frame">
